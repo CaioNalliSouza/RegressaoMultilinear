@@ -40,39 +40,84 @@ RegressãoMultifat/
 └── .venv/                      # Ambiente virtual Python
 ```
 
-## 🚀 Como Executar
+## � Instalação
 
-### Versão Refatorada (Recomendada)
+### Opção 1: Download sem Git (Mais Simples)
 
-```bash
-streamlit run app.py
-```
+1. **Baixe o projeto:**
+   - Acesse: https://github.com/CaioNalliSouza/RegressaoMultilinear
+   - Clique no botão verde **"Code"** → **"Download ZIP"**
+   - Extraia o arquivo em uma pasta de sua escolha
 
-### Versão Original (Legada)
-
-```bash
-streamlit run padrao.py
-```
-
-### Instalação Completa
-
-1. Clone o repositório
-2. Crie e ative o ambiente virtual:
-   ```bash
-   python -m venv .venv
-   .venv\Scripts\activate  # Windows
-   source .venv/bin/activate  # Linux/Mac
-   ```
-3. Instale as dependências:
+2. **Instale as dependências:**
    ```bash
    pip install -r requirements.txt
    ```
-4. Execute a aplicação:
+
+3. **Execute a aplicação:**
    ```bash
    streamlit run app.py
    ```
 
+### Opção 2: Com Ambiente Virtual (Recomendado para Desenvolvedores)
+
+**Por que usar ambiente virtual?**
+- ✅ Isola as dependências deste projeto
+- ✅ Evita conflitos com outros projetos Python
+- ✅ Permite versões diferentes de bibliotecas em projetos distintos
+- ✅ Mais organizado e profissional
+
+**Quando NÃO usar:**
+- Se for apenas testar rapidamente
+- Se a máquina só terá este projeto Python
+- Se você não desenvolve outros projetos Python
+
+**Como instalar com ambiente virtual:**
+
+1. **Clone ou baixe o repositório**
+
+2. **Crie o ambiente virtual:**
+   ```bash
+   python -m venv .venv
+   ```
+
+3. **Ative o ambiente virtual:**
+   ```bash
+   # Windows
+   .venv\Scripts\activate
+   
+   # Linux/Mac
+   source .venv/bin/activate
+   ```
+
+4. **Instale as dependências:**
+   ```bash
+   pip install -r requirements.txt
+   ```
+
+5. **Execute a aplicação:**
+   ```bash
+   streamlit run app.py
+   ```
+
+6. **Para desativar o ambiente virtual (quando terminar):**
+   ```bash
+   deactivate
+   ```
+
 O sistema abrirá automaticamente no navegador em `http://localhost:8501`
+
+## 🚀 Como Executar
+
+### Versão Principal (Recomendada)
+```bash
+streamlit run app.py
+```
+
+### Versão com Storytelling
+```bash
+streamlit run app_storytelling.py
+```
 
 ## 📊 Funcionalidades
 
